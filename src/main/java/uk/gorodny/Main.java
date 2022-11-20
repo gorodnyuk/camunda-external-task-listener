@@ -13,7 +13,7 @@ public class Main {
                 .asyncResponseTimeout(1000)
                 .build();
 
-        client.subscribe("external-demo")
+        client.subscribe("doExternal")
                 .lockDuration(1000)
                 .handler(new ExternalTaskHandler() {
                     @Override
